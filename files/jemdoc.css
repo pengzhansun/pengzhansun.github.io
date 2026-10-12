@@ -409,6 +409,25 @@ img.proj_thumb {
 	padding: 1px;
 }
 
+/* Publication thumbnails: uniform box, whole figure visible */
+a#publications ~ table.imgtable img.proj_thumb {
+	height: 110px;
+	object-fit: contain;
+	background-color: #ffffff;
+	vertical-align: middle;
+}
+
+a#publications ~ table.imgtable td {
+	vertical-align: middle;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+/* keep the trailing &nbsp; from wrapping under the thumbnail */
+a#publications ~ table.imgtable td:first-child {
+	white-space: nowrap;
+}
+
 table {
     border: 2px solid black;
     border-collapse: collapse;
